@@ -1,16 +1,17 @@
 #include <stdio.h>
 /**
- * main - Prints numbers from 0 to 9.
+ * main - print single digit numbers starting from 0
  *
- * Return: Always 0 (Success)
+ * Return: returns zero ar the end
  */
 int main(void)
 {
-int i;
-for (i = 0; i < 10; i++)
-{
-printf("%d", i);
-}
-putchar('\n');
-return (0);
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		printf("%d", i);
+	}
+	printf("\n");
+	return (0);
 }

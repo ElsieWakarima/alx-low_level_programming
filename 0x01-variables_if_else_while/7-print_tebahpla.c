@@ -1,7 +1,6 @@
 #include <stdio.h>
 /**
- * main - determines if the value of the random number
- * * generated is positive, zero or negative
+ * main - print alphabet in lowercase, but in reverse
  *
  * Return: returns zero ar the end
  */
@@ -9,7 +8,7 @@ int main(void)
 {
 	char ch;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
+	for (ch = 'z'; ch >= 'a'; ch--)
 	{
 		putchar(ch);
 	}
