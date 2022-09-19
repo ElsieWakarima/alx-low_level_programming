@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
@@ -6,13 +7,15 @@
  * @n: input n elements
  * Return: no return.
  */
+
 void print_array(int *a, int n)
 {
-	int i = 0;
+	int i;
 
-	for (; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		printf("%d", *(a + i));
+
 		if (i != (n - 1))
 			printf(", ");
 	}
