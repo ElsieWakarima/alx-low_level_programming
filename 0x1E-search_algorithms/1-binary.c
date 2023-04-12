@@ -10,7 +10,7 @@ void print_array(int *array, int left, int right)
 {
 	int i;
 
-	printf("Searching in array: ");
+	
 
 	for (i = left; i < right; i++)
 	{
@@ -53,7 +53,7 @@ int recurse_array(int *array, int left, int right, int value)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	if (array == NULL)
+	if (!array)
 		return (-1);
 
 	return (recurse_array(array, 0, size - 1, value));
